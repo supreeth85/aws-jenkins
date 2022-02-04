@@ -4,6 +4,9 @@ Resources:
     Type: 'AWS::S3::Bucket'
     Properties:
       BucketName: "supreeth-jenkins"
+      Tags: 
+        - Key: "keyname1"
+          Value: "value1"
     DeletionPolicy: Retain
 
 # Outputs:
